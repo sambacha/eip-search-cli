@@ -1,0 +1,10 @@
+---
+eip: 2981
+title: NFT Royalty Standard
+author: Zach Burks (@vexycats), James Morgan (@jamesmorgan), Blaine Malone (@blmalone), James Seibel (@seibelj)
+discussions-to: https://github.com/ethereum/EIPs/issues/2907
+status: Final
+type: Standards Track
+category: ERC
+created: 2020-09-15
+requires: 165

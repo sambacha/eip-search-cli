@@ -1,0 +1,10 @@
+---
+eip: 1155
+title: Multi Token Standard
+author: Witek Radomski <witek@enjin.io>, Andrew Cooke <ac0dem0nk3y@gmail.com>, Philippe Castonguay <pc@horizongames.net>, James Therien <james@turing-complete.com>, Eric Binet <eric@enjin.io>, Ronan Sandford <wighawag@gmail.com>
+type: Standards Track
+category: ERC
+status: Final
+created: 2018-06-17
+discussions-to: https://github.com/ethereum/EIPs/issues/1155
+requires: 165

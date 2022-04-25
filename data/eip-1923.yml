@@ -1,0 +1,10 @@
+---
+eip: 1923
+title: zk-SNARK Verifier Registry Standard
+author: Michael Connor <michael.connor@uk.ey.com>, Chaitanya Konda <chaitanya.konda@uk.ey.com>, Duncan Westland <duncan.westland@uk.ey.com>
+discussions-to: https://github.com/ethereum/EIPs/issues/1923
+type: Standards Track
+category: ERC
+status: Stagnant
+created: 2018-12-22
+requires: 165, 196, 197

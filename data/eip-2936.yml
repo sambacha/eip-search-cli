@@ -1,0 +1,9 @@
+---
+eip: 2936
+title: EXTCLEAR Opcode For SELFDESTRUCTed contracts
+author: William Morriss (@wjmelements)
+discussions-to: https://ethereum-magicians.org/t/eip-2936-extclear-for-selfdestruct/4569
+status: Stagnant
+type: Standards Track
+category: Core
+created: 2020-09-03

@@ -1,0 +1,11 @@
+---
+eip: 4799
+title: Non-Fungible Token Ownership Designation Standard
+description: A standardized interface for designating ownership of an NFT
+author: David Buckman (@davidbuckman), Isaac Buckman (@isaacbuckman)
+discussions-to: https://ethereum-magicians.org/t/erc-4799-non-fungible-token-wrapping-standard/8396
+status: Draft
+type: Standards Track
+category: ERC
+created: 2022-02-13
+requires: 165

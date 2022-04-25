@@ -1,0 +1,8 @@
+---
+eip: 141
+title: Designated invalid EVM instruction
+author: Alex Beregszaszi (@axic)
+type: Standards Track
+category: Core
+status: Final
+created: 2017-02-09

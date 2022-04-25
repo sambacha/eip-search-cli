@@ -1,0 +1,10 @@
+---
+eip: 1965
+title: Method to check if a chainID is valid at a specific block Number
+author: Ronan Sandford (@wighawag)
+category: Core
+type: Standards Track
+discussions-to: https://ethereum-magicians.org/t/eip-1965-valid-chainid-for-specific-blocknumber-protect-all-forks/3181
+status: Stagnant
+created: 2019-04-20
+requires: 155

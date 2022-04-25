@@ -1,0 +1,9 @@
+---
+eip: 1328
+title: WalletConnect Standard URI Format
+author: ligi <ligi@ligi.de>, Pedro Gomes <pedrouid@protonmail.com>
+type: Standards Track
+category: ERC
+status: Stagnant
+created: 2018-08-15
+discussions-to: https://ethereum-magicians.org/t/wallet-connect-eip/850

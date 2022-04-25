@@ -1,0 +1,8 @@
+---
+eip: 1577
+title: contenthash field for ENS
+author: Dean Eigenmann <dean@ens.domains>, Nick Johnson <nick@ens.domains>
+type: Standards Track
+category: ERC
+status: Stagnant
+created: 2018-11-13

@@ -1,0 +1,11 @@
+---
+eip: 4747
+title: Simplify EIP-161
+description: Simplify EIP-161 and retroactively deprecate unused aspects of it
+author: Peter Davies (@petertdavies)
+discussions-to: https://ethereum-magicians.org/t/eip-4747-simplify-eip-161/8246
+status: Draft
+type: Standards Track
+category: Core
+created: 2022-02-02
+requires: 161

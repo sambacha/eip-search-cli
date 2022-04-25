@@ -1,0 +1,93 @@
+
+#### eth_getCode
+
+##### Description
+
+Returns the contract code stored at a given address
+
+##### Parameters
+
+|#|Type|Description|
+|-|-|-|
+|1|{[`Data`](#data)}|address to query for code|
+|2|{[`Quantity`](#quantity)\|`string`\|[`Block Identifier`](#block-identifier)}|block number, or one of `"latest"`, `"earliest"` or `"pending"`, or a block identifier as described in [`Block Identifier`](#block-identifier)|
+
+##### Returns
+
+{[`Data`](#data)} - code from the specified address
+
+##### Example
+
+```sh
+# Request
+curl -X POST --data '{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "method": "eth_getCode",
+    "params": ["0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b", "0x2"]
+}' <url>
+
+# Response
+{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "result": "0x600160008035811a818181146012578301005b601b6001356025565b8060005260206000f25b600060078202905091905056"
+}
+```
+---
+
+#### eth_getFilterChanges
+
+##### Description
+
+Returns a list of all logs based on filter ID since the last log retrieval
+
+##### Parameters
+
+|#|Type|Description|
+|-|-|-|
+|1|{[`Quantity`](#quantity)}|ID of the filter|
+
+##### Returns
+
+{`Array<Log>`} - array of log objects with the following members:
+
+- {[`Data`](#data)} `address` - address from which this log originated
+- {[`Data`](#data)} `blockHash` - hash of block containing this log or `null` if pending
+- {[`Data`](#data)} `data` - contains the non-indexed arguments of the log
+- {[`Data`](#data)} `transactionHash` - hash of the transaction that created this log or `null` if pending
+- {[`Quantity`](#quantity)} `blockNumber` - number of block containing this log or `null` if pending
+- {[`Quantity`](#quantity)} `logIndex` - index of this log within its block or `null` if pending
+- {[`Quantity`](#quantity)} `transactionIndex` - index of the transaction that created this log or `null` if pending
+- {[`Data[]`](#data)} `topics` - list of order-dependent topics
+- {`boolean`} `removed` - `true` if this filter has been destroyed and is invalid
+
+**Note:** The return value of `eth_getFilterChanges` when retrieving logs from `eth_newBlockFilter` and `eth_newPendingTransactionFilter` filters will be an array of hashes, not an array of Log objects.
+
+##### Example
+
+```sh
+# Request
+curl -X POST --data '{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "method": "eth_getFilterChanges",
+    "params": ["0x16"]
+}' <url>
+
+# Response
+{
+   "id": 1337,
+   "jsonrpc": "2.0",
+    "result": [{
+        "address": "0x16c5785ac562ff41e2dcfdf829c5a142f1fccd7d",
+        "blockHash": "0x8216c5785ac562ff41e2dcfdf5785ac562ff41e2dcfdf829c5a142f1fccd7d",
+        "blockNumber":"0x1b4",
+        "data":"0x0000000000000000000000000000000000000000000000000000000000000000",
+        "logIndex": "0x1",
+        "topics": [],
+        "transactionHash":  "0xdf829c5a142f1fccd7d8216c5785ac562ff41e2dcfdf5785ac562ff41e2dcf",
+        "transactionIndex": "0x0"
+   }]
+}
+```

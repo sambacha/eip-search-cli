@@ -1,0 +1,11 @@
+---
+eip: 3224
+title: Described Data
+description: Contract method to compute human-readable descriptions for signable data.
+author: Richard Moore (@ricmoo), Nick Johnson (@arachnid)
+discussions-to: https://github.com/ethereum/EIPs/issues/3225
+status: Draft
+type: Standards Track
+category: ERC
+created: 2021-01-23
+requires: 191

@@ -1,0 +1,9 @@
+---
+eip: 2997
+title: IMPERSONATECALL Opcode
+author: Sergio Demian Lerner (@SergioDemianLerner)
+discussions-to: https://ethresear.ch/t/impersonatecall-opcode/8020
+category: Core
+type: Standards Track
+status: Stagnant
+created: 2020-09-24

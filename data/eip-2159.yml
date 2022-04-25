@@ -1,0 +1,9 @@
+---
+eip: 2159
+title: Common Prometheus Metrics Names for Clients
+author: Adrian Sutton (@ajsutton)
+discussions-to: https://ethereum-magicians.org/t/common-chain-metrics/3415
+status: Final
+type: Standards Track
+category: Interface
+created: 2019-07-01

@@ -1,0 +1,10 @@
+---
+eip: 3521
+title: Reduce access list cost
+author: Matt Garnett (@lightclient)
+discussions-to: https://ethereum-magicians.org/t/eip-3521-reduce-access-list-cost/6072
+status: Stagnant
+type: Standards Track
+category: Core
+created: 2021-04-15
+requires: 2028, 2930

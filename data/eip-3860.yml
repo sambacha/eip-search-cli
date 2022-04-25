@@ -1,0 +1,11 @@
+---
+eip: 3860
+title: Limit and meter initcode
+description: Limit the maximum size of initcode to 49152 and apply extra gas cost of 2 for every 32-byte chunk of initcode
+author: Martin Holst Swende (@holiman), Paweł Bylica (@chfast), Alex Beregszaszi (@axic), Andrei Maiboroda (@gumb0)
+discussions-to: https://ethereum-magicians.org/t/eip-3860-limit-and-meter-initcode/7018
+status: Review
+type: Standards Track
+category: Core
+requires: 170
+created: 2021-07-16

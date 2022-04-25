@@ -1,0 +1,9 @@
+---
+eip: 698
+title: OPCODE 0x46 BLOCKREWARD
+author: Cody Burns <dontPanic@codywburns.com>
+discussions-to: https://github.com/ethereum/EIPs/issues/698
+status: Stagnant
+type: Standards Track
+category: Core
+created: 2017-08-28

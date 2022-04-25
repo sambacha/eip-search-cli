@@ -1,0 +1,8 @@
+---
+eip: 3
+title: Addition of CALLDEPTH opcode
+author: Martin Holst Swende <martin@swende.se>
+status: Withdrawn
+type: Standards Track
+category: Core
+created: 2015-11-19

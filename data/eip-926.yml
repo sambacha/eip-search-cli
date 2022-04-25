@@ -1,0 +1,9 @@
+---
+eip: 926
+title: Address metadata registry
+author: Nick Johnson <nick@ethereum.org>
+type: Standards Track
+category: ERC
+status: Stagnant
+created: 2018-03-12
+requires: 165

@@ -1,0 +1,75 @@
+
+#### eth_getWork
+
+##### Description
+
+Returns a list containing relevant information for proof-of-work
+
+##### Parameters
+
+_none_
+
+##### Returns
+
+{[`Data[]`](#data)} - array with the following items:
+
+1. {[`Data`](#data)} - current block header pow-hash
+1. {[`Data`](#data)} - seed hash used for the DAG
+1. {[`Data`](#data)} - boundary condition ("target"), 2^256 / difficulty
+
+##### Example
+
+```sh
+# Request
+curl -X POST --data '{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "method": "eth_getWork",
+    "params": []
+}' <url>
+
+# Response
+{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "result": [
+        "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+        "0x5EED00000000000000000000000000005EED0000000000000000000000000000",
+        "0xd1ff1c01710000000000000000000000d1ff1c01710000000000000000000000"
+    ]
+}
+```
+---
+
+#### eth_hashrate
+
+##### Description
+
+Returns the number of hashes-per-second this node is mining at
+
+##### Parameters
+
+_(none)_
+
+##### Returns
+
+{[`Quantity`](#quantity)} - number of hashes-per-second
+
+##### Example
+
+```sh
+# Request
+curl -X POST --data '{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "method": "eth_hashrate",
+    "params": []
+}' <url>
+
+# Response
+{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "result": "0x38a"
+}
+```

@@ -1,0 +1,10 @@
+---
+eip: 3722
+title: Poster
+description: A ridiculously simple general purpose social media smart contract.
+author: Auryn Macmillan (@auryn-macmillan)
+discussions-to: https://ethereum-magicians.org/t/eip-poster-a-ridiculously-simple-general-purpose-social-media-smart-contract/6751
+status: Review
+type: Standards Track
+category: ERC
+created: 2021-07-31

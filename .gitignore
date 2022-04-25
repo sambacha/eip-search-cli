@@ -1,0 +1,13 @@
+.DS_Store
+node_modules
+tmp/
+_tmp
+out/
+build
+dist/
+*.tar.gz
+*.zip
+*.log
+.env
+
+/raw export-ignore

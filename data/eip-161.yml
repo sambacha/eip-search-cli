@@ -1,0 +1,8 @@
+---
+eip: 161
+title: State trie clearing (invariant-preserving alternative)
+author: Gavin Wood (@gavofyork)
+type: Standards Track
+category: Core
+status: Final
+created: 2016-10-24

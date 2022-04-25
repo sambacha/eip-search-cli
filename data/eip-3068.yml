@@ -1,0 +1,10 @@
+---
+eip: 3068
+title: Precompile for BN256 HashToCurve Algorithms
+author: Dr. Christopher Gorman (@chgormanMH)
+discussions-to: https://ethereum-magicians.org/t/pre-compile-for-bls/3973
+status: Stagnant
+type: Standards Track
+category: Core
+created: 2020-10-23
+requires: 198, 1108

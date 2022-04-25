@@ -1,0 +1,70 @@
+
+#### eth_gasPrice
+
+##### Description
+
+Returns the current price of gas expressed in wei
+
+##### Parameters
+
+_(none)_
+
+##### Returns
+
+{[`Quantity`](#quantity)} - current gas price in wei
+
+##### Example
+
+```sh
+# Request
+curl -X POST --data '{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "method": "eth_gasPrice",
+    "params": []
+}' <url>
+
+# Response
+{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "result": "0x09184e72a000"
+}
+```
+---
+
+#### eth_getBalance
+
+##### Description
+
+Returns the balance of an address in wei
+
+##### Parameters
+
+|#|Type|Description|
+|-|-|-|
+|1|{[`Data`](#data)}|address to query for balance|
+|2|{[`Quantity`](#quantity)\|`string`\|[`Block Identifier`](#block-identifier)}|block number, or one of `"latest"`, `"earliest"` or `"pending"`, or a block identifier as described in [`Block Identifier`](#block-identifier)|
+
+##### Returns
+
+{[`Quantity`](#quantity)} - balance of the provided account in wei
+
+##### Example
+
+```sh
+# Request
+curl -X POST --data '{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "method": "eth_getBalance",
+    "params": ["0xc94770007dda54cF92009BFF0dE90c06F603a09f", "latest"]
+}' <url>
+
+# Response
+{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "result": "0x0234c8a3397aab58"
+}
+```

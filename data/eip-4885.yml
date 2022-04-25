@@ -1,0 +1,11 @@
+---
+eip: 4885
+title: Subscription Token Standard for NFTs and Multi Tokens
+description: A standard interface for subscription tokens that gives holders subscriptions to NFTs and multi tokens
+author: Jules Lai (@julesl23)
+discussions-to: https://ethereum-magicians.org/t/eip-subscription-token-standard/8531
+status: Draft
+type: Standards Track
+category: ERC
+created: 2022-03-08
+requires: 165, 721, 1155

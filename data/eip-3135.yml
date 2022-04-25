@@ -1,0 +1,10 @@
+---
+eip: 3135
+title: Exclusive Claimable Token
+author: Zhenyu Sun (@Ungigdu)
+discussions-to: https://github.com/ethereum/EIPs/issues/3132
+status: Stagnant
+type: Standards Track
+category: ERC
+created: 2020-08-10
+requires: 20

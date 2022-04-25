@@ -1,0 +1,77 @@
+
+#### eth_blockNumber
+
+##### Description
+
+Returns the number of the most recent block seen by this client
+
+##### Parameters
+
+_(none)_
+
+##### Returns
+
+{[`Quantity`](#quantity)} - number of the latest block
+
+##### Example
+
+```sh
+# Request
+curl -X POST --data '{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "method": "eth_blockNumber",
+    "params": []
+}' <url>
+
+# Response
+{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "result": "0xc94"
+}
+```
+---
+
+#### eth_call
+
+##### Description
+
+Executes a new message call immediately without submitting a transaction to the network
+
+##### Parameters
+
+|#|Type|Description|
+|-|-|-|
+|1|{`object`}|@property {[`Data`](#data)} `[from]` - transaction sender<br/>@property {[`Data`](#data)} `to` - transaction recipient or `null` if deploying a contract<br/>@property {[`Quantity`](#quantity)} `[gas]` - gas provided for transaction execution<br/>@property {[`Quantity`](#quantity)} `[gasPrice]` - price in wei of each gas used<br/>@property {[`Quantity`](#quantity)} `[value]` - value in wei sent with this transaction<br/>@property {[`Data`](#data)} `[data]` - contract code or a hashed method call with encoded args|
+|2|{[`Quantity`](#quantity)\|`string`\|[`Block Identifier`](#block-identifier)}|block number, or one of `"latest"`, `"earliest"` or `"pending"`, or a block identifier as described in [`Block Identifier`](#block-identifier)|
+
+##### Returns
+
+{[`Data`](#data)} - return value of executed contract
+
+##### Example
+
+```sh
+# Request
+curl -X POST --data '{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "method": "eth_call",
+    "params": [{
+        "data": "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675",
+        "from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155",
+        "gas": "0x76c0",
+        "gasPrice": "0x9184e72a000",
+        "to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567",
+        "value": "0x9184e72a"
+    }]
+}' <url>
+
+# Response
+{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "result": "0x"
+}
+```

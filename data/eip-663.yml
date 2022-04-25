@@ -1,0 +1,11 @@
+---
+eip: 663
+title: Unlimited SWAP and DUP instructions
+description: Introduce SWAPN and DUPN which take an immediate value for the depth
+author: Alex Beregszaszi (@axic)
+discussions-to: https://ethereum-magicians.org/t/eip-663-unlimited-swap-and-dup-instructions/3346
+type: Standards Track
+category: Core
+status: Draft
+created: 2017-07-03
+requires: 3540

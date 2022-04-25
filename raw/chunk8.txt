@@ -1,0 +1,71 @@
+
+#### eth_getBlockTransactionCountByHash
+
+##### Description
+
+Returns the number of transactions in a block specified by block hash
+
+##### Parameters
+
+|#|Type|Description|
+|-|-|-|
+|1|{[`Data`](#data)}|hash of a block|
+
+##### Returns
+
+{[`Quantity`](#quantity)} - number of transactions in the specified block
+
+##### Example
+
+```sh
+# Request
+curl -X POST --data '{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "method": "eth_getBlockTransactionCountByHash",
+    "params": ["0xc94770007dda54cF92009BFF0dE90c06F603a09f"]
+}' <url>
+
+# Response
+{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "result": "0xc"
+}
+```
+---
+
+#### eth_getBlockTransactionCountByNumber
+
+##### Description
+
+Returns the number of transactions in a block specified by block number
+
+##### Parameters
+
+|#|Type|Description|
+|-|-|-|
+|1|{[`Quantity`](#quantity)\|`string`}|block number, or one of `"latest"`, `"earliest"` or `"pending"`|
+
+##### Returns
+
+{[`Quantity`](#quantity)} - number of transactions in the specified block
+
+##### Example
+
+```sh
+# Request
+curl -X POST --data '{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "method": "eth_getBlockTransactionCountByNumber",
+    "params": ["0xe8"]
+}' <url>
+
+# Response
+{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "result": "0xa"
+}
+```

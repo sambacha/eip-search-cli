@@ -1,0 +1,9 @@
+---
+eip: 2937
+title: SET_INDESTRUCTIBLE opcode
+author: Vitalik Buterin (@vbuterin)
+discussions-to: https://ethereum-magicians.org/t/eip-2937-set-indestructible/4571
+status: Stagnant
+type: Standards Track
+category: Core
+created: 2020-09-04

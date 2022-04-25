@@ -1,0 +1,11 @@
+---
+eip: 4844
+title: Shard Blob Transactions
+description: Shard Blob Transactions scale data-availability of Ethereum in a simple, forwards-compatible manner.
+author: Vitalik Buterin (@vbuterin), Dankrad Feist (@dankrad), Diederik Loerakker (@protolambda), George Kadianakis (@asn-d6), Matt Garnett (@lightclient)
+discussions-to: https://ethereum-magicians.org/t/eip-4844-shard-blob-transactions/8430
+status: Draft
+type: Standards Track
+category: Core
+created: 2022-02-25
+requires: 1559, 2718, 2930

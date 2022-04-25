@@ -1,0 +1,11 @@
+---
+eip: 4750
+title: EOF - Functions
+description: Individual sections for functions with `CALLF` and `RETF` instructions
+author: Andrei Maiboroda (@gumb0), Alex Beregszaszi (@axic), Paweł Bylica (@chfast)
+discussions-to: https://ethereum-magicians.org/t/eip-4750-eof-functions/8195
+status: Draft
+type: Standards Track
+category: Core
+created: 2022-01-10
+requires: 3540, 3670

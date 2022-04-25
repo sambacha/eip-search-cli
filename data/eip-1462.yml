@@ -1,0 +1,10 @@
+---
+eip: 1462
+title: Base Security Token
+author: Maxim Kupriianov <mk@atlant.io>, Julian Svirsky <js@atlant.io>
+discussions-to: https://ethereum-magicians.org/t/erc-1462-base-security-token/1501
+status: Stagnant
+type: Standards Track
+category: ERC
+created: 2018-10-01
+requires: 20, 1066

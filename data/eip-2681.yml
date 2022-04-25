@@ -1,0 +1,9 @@
+---
+eip: 2681
+title: Limit account nonce to 2^64-1
+author: Alex Beregszaszi (@axic)
+discussions-to: https://ethereum-magicians.org/t/eip-2681-limit-account-nonce-to-2-64-1/4324
+status: Final
+type: Standards Track
+category: Core
+created: 2020-04-25

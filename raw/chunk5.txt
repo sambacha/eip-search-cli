@@ -1,0 +1,79 @@
+
+#### eth_coinbase
+
+##### Description
+
+Returns the coinbase address for this client
+
+##### Parameters
+
+_(none)_
+
+##### Returns
+
+{[`Data`](#data)} - coinbase address
+
+##### Example
+
+```sh
+# Request
+curl -X POST --data '{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "method": "eth_coinbase",
+    "params": []
+}' <url>
+
+# Response
+{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "result": "0xc94770007dda54cF92009BFF0dE90c06F603a09f"
+}
+```
+---
+
+#### eth_estimateGas
+
+##### Description
+
+Estimates the gas necessary to complete a transaction without submitting it to the network
+
+**Note:** The resulting gas estimation may be significantly more than the amount of gas actually used by the transaction. This is due to a variety of reasons including EVM mechanics and node performance.
+
+##### Parameters
+
+|#|Type|Description|
+|-|-|-|
+|1|{`object`}|@property {[`Data`](#data)} `[from]` - transaction sender<br/>@property {[`Data`](#data)} `[to]` - transaction recipient<br/>@property {[`Quantity`](#quantity)} `[gas]` - gas provided for transaction execution<br/>@property {[`Quantity`](#quantity)} `[gasPrice]` - price in wei of each gas used<br/>@property {[`Quantity`](#quantity)} `[value]` - value in wei sent with this transaction<br/>@property {[`Data`](#data)} `[data]` - contract code or a hashed method call with encoded args|
+|2|{[`Quantity`](#quantity)\|`string`}|block number, or one of `"latest"`, `"earliest"` or `"pending"`|
+
+##### Returns
+
+{[`Quantity`](#quantity)} - amount of gas required by transaction
+
+##### Example
+
+```sh
+# Request
+curl -X POST --data '{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "method": "eth_estimateGas",
+    "params": [{
+        "data": "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675",
+        "from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155",
+        "gas": "0x76c0",
+        "gasPrice": "0x9184e72a000",
+        "to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567",
+        "value": "0x9184e72a"
+    }]
+}' <url>
+
+# Response
+{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "result": "0x5208"
+}
+```

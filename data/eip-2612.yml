@@ -1,0 +1,11 @@
+---
+eip: 2612
+title: permit – 712-signed approvals
+description: ERC-20 approvals via secp256k1 signatures
+author: Martin Lundfall (@Mrchico)
+discussions-to: https://github.com/ethereum/EIPs/issues/2613
+status: Review
+type: Standards Track
+category: ERC
+created: 2020-04-13
+requires: 20, 712

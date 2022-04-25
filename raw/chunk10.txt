@@ -1,0 +1,115 @@
+
+#### eth_getFilterLogs
+
+##### Description
+
+Returns a list of all logs based on filter ID
+
+##### Parameters
+
+|#|Type|Description|
+|-|-|-|
+|1|{[`Quantity`](#quantity)}|ID of the filter|
+
+##### Returns
+
+{`Array<Log>`} - array of log objects with the following members:
+
+- {[`Data`](#data)} address - address from which this log originated
+- {[`Data`](#data)} blockHash - hash of block containing this log or `null` if pending
+- {[`Data`](#data)} data - contains the non-indexed arguments of the log
+- {[`Data`](#data)} transactionHash - hash of the transaction that created this log or `null` if pending
+- {[`Quantity`](#quantity)} blockNumber - number of block containing this log or `null` if pending
+- {[`Quantity`](#quantity)} logIndex - index of this log within its block or `null` if pending
+- {[`Quantity`](#quantity)} transactionIndex - index of the transaction that created this log or `null` if pending
+- {`Array<Data>`} topics - list of order-dependent topics
+- {`boolean`} removed - `true` if this filter has been destroyed and is invalid
+
+**Note:** The return value of `eth_getFilterLogs` when retrieving logs from `eth_newBlockFilter` and `eth_newPendingTransactionFilter` filters will be an array of hashes, not an array of Log objects.
+
+##### Example
+
+```sh
+# Request
+curl -X POST --data '{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "method": "eth_getFilterLogs",
+    "params": ["0x16"]
+}' <url>
+
+# Response
+{
+   "id": 1337,
+   "jsonrpc": "2.0",
+    "result": [{
+        "address": "0x16c5785ac562ff41e2dcfdf829c5a142f1fccd7d",
+        "blockHash": "0x8216c5785ac562ff41e2dcfdf5785ac562ff41e2dcfdf829c5a142f1fccd7d",
+        "blockNumber":"0x1b4",
+        "data":"0x0000000000000000000000000000000000000000000000000000000000000000",
+        "logIndex": "0x1",
+        "topics": [],
+        "transactionHash":  "0xdf829c5a142f1fccd7d8216c5785ac562ff41e2dcfdf5785ac562ff41e2dcf",
+        "transactionIndex": "0x0"
+   }]
+}
+```
+---
+
+#### eth_getLogs
+
+##### Description
+
+Returns a list of all logs based on a filter object
+
+##### Parameters
+
+|#|Type|Description|
+|-|-|-|
+|1|{`object`}|@property {[`Quantity`](#quantity)\|`string`} `[fromBlock]` - block number, or one of `"latest"`, `"earliest"` or `"pending"`<br/>@property {[`Quantity`](#quantity)\|`string`} `[toBlock]` - block number, or one of `"latest"`, `"earliest"` or `"pending"`<br/>@property {[`Data`](#data)\|[`Data[]`](#data)} `[address]` - contract address or a list of addresses from which logs should originate<br/>@property {[`Data[]`](#data)} `[topics]` - list of order-dependent topics<br/>@property {[`Data`](#data)} `[blockhash]` - restrict logs to a block by hash|
+
+**Note:** If `blockhash` is passed, neither `fromBlock` nor `toBlock` are allowed or respected.
+
+##### Returns
+
+{`Array<Log>`} - array of log objects with the following members:
+
+- {[`Data`](#data)} `address` - address from which this log originated
+- {[`Data`](#data)} `blockHash` - hash of block containing this log or `null` if pending
+- {[`Data`](#data)} `data` - contains the non-indexed arguments of the log
+- {[`Data`](#data)} `transactionHash` - hash of the transaction that created this log or `null` if pending
+- {[`Quantity`](#quantity)} `blockNumber` - number of block containing this log or `null` if pending
+- {[`Quantity`](#quantity)} `logIndex` - index of this log within its block or `null` if pending
+- {[`Quantity`](#quantity)} `transactionIndex` - index of the transaction that created this log or `null` if pending
+- {[`Data`](#data)} `topics` - list of order-dependent topics
+- {`boolean`} `removed` - `true` if this filter has been destroyed and is invalid
+
+##### Example
+
+```sh
+# Request
+curl -X POST --data '{
+    "id": 1337,
+    "jsonrpc": "2.0",
+    "method": "eth_getLogs",
+    "params": [{
+        "topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]
+    }]
+}' <url>
+
+# Response
+{
+   "id": 1337,
+   "jsonrpc": "2.0",
+    "result": [{
+        "address": "0x16c5785ac562ff41e2dcfdf829c5a142f1fccd7d",
+        "blockHash": "0x8216c5785ac562ff41e2dcfdf5785ac562ff41e2dcfdf829c5a142f1fccd7d",
+        "blockNumber":"0x1b4",
+        "data":"0x0000000000000000000000000000000000000000000000000000000000000000",
+        "logIndex": "0x1",
+        "topics": [],
+        "transactionHash":  "0xdf829c5a142f1fccd7d8216c5785ac562ff41e2dcfdf5785ac562ff41e2dcf",
+        "transactionIndex": "0x0"
+   }]
+}
+```

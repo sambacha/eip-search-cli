@@ -1,0 +1,10 @@
+---
+eip: 3754
+title: A Vanilla Non-Fungible Token Standard
+description: NFTs for representing abstract ownership
+author: Simon Tian (@simontianx)
+discussions-to: https://github.com/ethereum/EIPs/issues/3753
+status: Draft
+type: Standards Track
+category: ERC
+created: 2021-08-21

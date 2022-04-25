@@ -1,0 +1,10 @@
+---
+eip: 3756
+title: Gas Limit Cap
+description: Set an in-protocol cap for the gas limit
+author: lightclient (@lightclient)
+discussions-to: https://ethereum-magicians.org/t/eip-3756-gas-limit-cap/6921
+status: Stagnant
+type: Standards Track
+category: Core
+created: 2021-08-21

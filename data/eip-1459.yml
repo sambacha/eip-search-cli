@@ -1,0 +1,11 @@
+---
+eip: 1459
+title: Node Discovery via DNS
+description: Scheme for authenticated updateable Ethereum node lists via DNS.
+author: Felix Lange (@fjl), Péter Szilágyi (@karalabe)
+type: Standards Track
+category: Networking
+status: Review
+created: 2018-09-26
+requires: 778
+discussions-to: https://github.com/ethereum/devp2p/issues/50

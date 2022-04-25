@@ -1,0 +1,10 @@
+---
+eip: 1962
+title: EC arithmetic and pairings with runtime definitions
+author: Alex Vlasov (@shamatar)
+discussions-to: https://ethereum-magicians.org/t/generalised-precompile-for-elliptic-curve-arithmetics-and-pairings-working-group/3208/2
+type: Standards Track
+category: Core
+status: Stagnant
+created: 2019-04-22
+requires: 1109

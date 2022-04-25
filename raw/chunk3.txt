@@ -1,0 +1,25 @@
+```
+
+## Rationale
+
+`updates` and `updated-by` apply only to EIPs in `active` status as updates to EIPs in `final` status are already handled by EIP headers `superseded-by` and `replaces`.
+
+The syntax should align with previous EIP header syntax, as this EIP is not updating syntax, simply adding header options.
+
+## Backwards Compatibility
+
+These EIP headers are optional and do not introduce compatibility issues.
+
+
+## Implementation
+
+An implementation is adding a header option. 
+
+## Security Considerations
+
+This standard is informational and does not introduce technical security issues.
+
+## Copyright
+Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+
+

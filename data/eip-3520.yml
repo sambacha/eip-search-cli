@@ -1,0 +1,10 @@
+---
+eip: 3520
+title: Transaction Destination Opcode
+author: Alex Papageorgiou (@alex-ppg)
+discussions-to: https://ethereum-magicians.org/t/eip-3520-transaction-destination-opcode/6058
+status: Stagnant
+type: Standards Track
+category: Core
+created: 2021-04-16
+requires: 3508

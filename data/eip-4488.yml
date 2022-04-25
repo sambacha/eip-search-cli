@@ -1,0 +1,10 @@
+---
+eip: 4488
+title: Transaction calldata gas cost reduction with total calldata limit
+description: Greatly decreases the gas cost of transaction calldata and simultaneously caps total transaction calldata in a block
+author: Vitalik Buterin (@vbuterin), Ansgar Dietrichs (@adietrichs)
+discussions-to: https://ethereum-magicians.org/t/eip-4488-transaction-calldata-gas-cost-reduction-with-total-calldata-limit/7555
+type: Standards Track
+category: Core
+status: Draft
+created: 2021-11-23

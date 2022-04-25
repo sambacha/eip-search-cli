@@ -1,0 +1,9 @@
+---
+eip: 658
+title: Embedding transaction status code in receipts
+author: Nick Johnson <nick@ethereum.org>
+type: Standards Track
+category: Core
+status: Final
+created: 2017-06-30
+requires: 140

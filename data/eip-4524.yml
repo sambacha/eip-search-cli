@@ -1,0 +1,11 @@
+---
+eip: 4524
+title: Safer ERC-20
+description: Extending ERC-20 with ERC165 and adding safeTransfer (like ERC-721 and ERC-1155)
+author: William Schwab (@wschwab)
+discussions-to: https://ethereum-magicians.org/t/why-isnt-there-an-erc-for-safetransfer-for-erc20/7604
+status: Draft
+type: Standards Track
+category: ERC
+created: 2021-12-05
+requires: 20, 165

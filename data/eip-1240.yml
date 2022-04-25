@@ -1,0 +1,9 @@
+---
+eip: 1240
+title: Remove Difficulty Bomb
+author: Micah Zoltu (@MicahZoltu)
+discussions-to: https://ethereum-magicians.org/t/difficulty-bomb-removal/832
+type: Standards Track
+category: Core
+status: Withdrawn
+created: 2018-07-21

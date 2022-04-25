@@ -1,0 +1,10 @@
+---
+eip: 3044
+title: Adds `baseFee` to `eth_getBlockByNumber`
+author: Abdelhamid Bakhta (@abdelhamidbakhta)
+discussions-to: https://ethereum-magicians.org/t/eip-3044-add-basefee-to-eth-getblockbynumber/4828
+status: Stagnant
+type: Standards Track
+category: Interface
+created: 2020-10-14
+requires: 1474, 1559

@@ -1,0 +1,11 @@
+---
+eip: 4834
+title: Hierarchical Domain Standard
+description: A standard for extremely generic name resolution.
+author: Pandapip1 (@Pandapip1)
+discussions-to: https://ethereum-magicians.org/t/erc-4834-hierarchical-domains-standard/8388
+status: Draft
+type: Standards Track
+category: ERC
+created: 2022-02-22
+requires: 20, 137, 165, 1155

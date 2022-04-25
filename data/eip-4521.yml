@@ -1,0 +1,11 @@
+---
+eip: 4521
+title: 721/20-compatible transfer
+description: Recommends a simple extension to make NFTs compatible with apps and contracts that handle fungibles.
+author: Ross Campbell (@z0r0z)
+discussions-to: https://ethereum-magicians.org/t/eip-4521-721-20-compatible-transfer/7903
+status: Draft
+type: Standards Track
+category: ERC
+created: 2021-12-13
+requires: 721

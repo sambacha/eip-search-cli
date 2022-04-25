@@ -1,0 +1,11 @@
+---
+eip: 4955
+title: Vendor Specific Metadata Extension for Non-Fungible Tokens
+description: Add a new field to NFT metadata to store vendor specific data
+author: Ignacio Mazzara (@nachomazzara)
+discussions-to: https://ethereum-magicians.org/t/eip-4955-non-fungible-token-metadata-namespaces-extension/8746
+status: Draft
+type: Standards Track
+category: ERC
+created: 2022-03-29
+requires: 721, 1155

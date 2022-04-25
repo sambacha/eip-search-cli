@@ -1,0 +1,10 @@
+---
+eip: 3525
+title: Semi-Fungible Token Standard
+author: Will Wang (@will-edge), Mike Meng <myan@solv.finance>, TsaiYee <yee.tsai@gmail.com>, Ryan Chow <ryanchow@solv.finance>, Zhongxin Wu <wuzhongxin@solv.finance>, AlvisDu <dujincai@solv.finance>
+discussions-to: https://github.com/ethereum/EIPs/issues/3641
+status: Draft
+type: Standards Track
+category: ERC
+created: 2020-12-01
+requires: 165, 721

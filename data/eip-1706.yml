@@ -1,0 +1,11 @@
+---
+eip: 1706
+title: Disable SSTORE with gasleft lower than call stipend
+author: Alex Forshtat <alex@tabookey.com>, Yoav Weiss <yoav@tabookey.com>
+discussions-to: https://github.com/alex-forshtat-tbk/EIPs/issues/1
+status: Withdrawn
+withdrawal-reason: The authors prefer [EIP-2200](./eip-2200.md)
+type: Standards Track
+category: Core
+created: 2019-01-15
+requires: 1283

@@ -1,0 +1,10 @@
+---
+eip: 3198
+title: BASEFEE opcode
+author: Abdelhamid Bakhta (@abdelhamidbakhta), Vitalik Buterin (@vbuterin)
+discussions-to: https://ethereum-magicians.org/t/eip-3198-basefeeopcode/5162
+status: Final
+type: Standards Track
+category: Core
+created: 2021-01-13
+requires: 1559

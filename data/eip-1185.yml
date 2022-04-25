@@ -1,0 +1,10 @@
+---
+eip: 1185
+title: Storage of DNS Records in ENS
+author: Jim McDonald (@mcdee)
+status: Stagnant
+type: Standards Track
+category: ERC
+created: 2018-06-26
+requires: 137
+discussions-to: https://ethereum-magicians.org/t/eip1185-dns-resolver-profile-for-ens/1589

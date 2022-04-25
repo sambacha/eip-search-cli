@@ -1,0 +1,8 @@
+---
+eip: 689
+title: Address Collision of Contract Address Causes Exceptional Halt
+author: Yoichi Hirai <i@yoichihirai.com>
+type: Standards Track
+category: Core
+status: Stagnant
+created: 2017-08-15

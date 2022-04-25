@@ -1,0 +1,12 @@
+---
+eip: 3978
+title: Gas refunds on reverts
+description: Reprice reverted SSTORE/CREATE/SELFDESTRUCT/LOGX operations gas via gas refund mechanism
+author: Anton Bukov (@k06a), Mikhail Melnik (@ZumZoom)
+discussions-to: https://ethereum-magicians.org/t/eip-3978-gas-refunds-on-reverts/7071/
+status: Draft
+type: Standards Track
+category: Core
+created: 2021-09-16
+updated: 2022-02-14
+requires: 2929

@@ -1,0 +1,10 @@
+---
+eip: 681
+title: URL Format for Transaction Requests
+author: Daniel A. Nagy (@nagydani)
+type: Standards Track
+category: ERC
+status: Final
+discussions-to: https://ethereum-magicians.org/t/erc-681-representing-various-transactions-as-urls
+created: 2017-08-01
+requires: 20, 137

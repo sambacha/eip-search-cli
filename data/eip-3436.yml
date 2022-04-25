@@ -1,0 +1,10 @@
+---
+eip: 3436
+title: Expanded Clique Block Choice Rule
+author: Danno Ferrin (@shemnon)
+discussions-to: https://ethereum-magicians.org/t/eip-3436-expanded-clique-block-choice-rule/5809
+status: Stagnant
+type: Standards Track
+category: Core
+created: 2021-03-25
+requires: 225
