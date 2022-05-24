@@ -1,0 +1,3 @@
+[submodule "EIP"]
+	path = EIP
+	url = https://github.com/ethereum/EIP
